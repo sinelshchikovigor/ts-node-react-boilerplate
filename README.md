@@ -1,5 +1,7 @@
 # TypeScript Node + React boilerplate
 
+[![Build Status](https://travis-ci.org/sinelshchikovigor/ts-node-react-boilerplate.svg?branch=develop)](https://travis-ci.org/sinelshchikovigor/ts-node-react-boilerplate)
+
 # Contents
 * [Server](#server)
     * [Starting server](#starting-server)

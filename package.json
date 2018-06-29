@@ -4,13 +4,14 @@
     "description": "TypeScript Node + React boilerplate",
     "main": "index.js",
     "scripts": {
+        "install": "cd src/server && npm i && cd ../www && npm i && cd ../mobile && npm i",
         "start": "cd src/server && npm start",
         "stop": "cd src/server && npm stop",
         "prod": "cd src/server && npm run prod",
         "ios": "cd src/mobile && npm run ios",
         "e2e": "cd src/www && npm run build && cd ../server && npm run prod && cd ../www && npm run e2e",
         "test": "cd src/server && npm run test:ci && cd ../www && npm run test:ci",
-        "ci": "cd src/server && npm run ci && cd ../www && npm run ci && cd ../ && npm run e2e"
+        "ci": "cd src/server && npm run ci && cd ../www && npm run ci"
     },
     "repository": {
         "type": "git",
