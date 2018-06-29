@@ -1,0 +1,26 @@
+{
+    "name": "ts-node-react-boilerplate",
+    "version": "0.1.0",
+    "description": "TypeScript Node + React boilerplate",
+    "main": "index.js",
+    "scripts": {
+        "start": "cd src/server && npm start",
+        "stop": "cd src/server && npm stop",
+        "prod": "cd src/server && npm run prod",
+        "ios": "cd src/mobile && npm run ios",
+        "e2e": "cd src/www && npm run build && cd ../server && npm run prod && cd ../www && npm run e2e",
+        "test": "cd src/server && npm run test:ci && cd ../www && npm run test:ci",
+        "ci": "cd src/server && npm run ci && cd ../www && npm run ci && cd ../ && npm run e2e"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sinelshchikovigor/ts-node-react-boilerplate.git"
+    },
+    "author": "sinelshchikovigor",
+    "license": "MIT",
+    "homepage": "",
+    "dependencies": {
+        "@types/lodash": "4.14.108",
+        "lodash": "4.17.10"
+    }
+}

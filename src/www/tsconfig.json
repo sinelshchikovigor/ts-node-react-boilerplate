@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "allowJs": false,
+        "strict": true,
+        "jsx": "react",
+        "target": "es5",
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "outDir": "temp/ts",
+        "lib": [
+            "es2015",
+            "dom",
+            "esnext.asynciterable"
+        ],
+        "plugins": [
+            {
+                "name": "typescript-styled-plugin"
+            }
+        ],
+        "baseUrl": "../",
+        "paths": {
+            "lodash": [
+                "../node_modules/@types/lodash"
+            ],
+            "common/*": [
+                "common/*"
+            ],
+            "www/*": [
+                "www/src/*"
+            ]
+        }
+    },
+    "include": [
+        "./src/**/*",
+        "../common/**/*",
+    ]
+}

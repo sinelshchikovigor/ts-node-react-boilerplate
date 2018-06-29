@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "allowJs": false,
+        "jsx": "react-native",
+        "strict": true,
+        "target": "es5",
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "outDir": "ts",
+        "lib": [
+            "es2015",
+            "dom",
+            "esnext.asynciterable"
+        ],
+        "rootDirs": [
+            "mobile/src",
+            "../common"
+        ],
+        "baseUrl": "../",
+        "paths": {
+            "lodash": [
+                "../node_modules/@types/lodash"
+            ],
+            "common/*": [
+                "common/*"
+            ],
+            "mobile/*": [
+                "mobile/src/*"
+            ],
+        },
+    },
+    "include": [
+        "../mobile/src/**/*",
+        "../common/**/*"
+    ]
+}

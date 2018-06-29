@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "allowJs": false,
+        "strict": true,
+        "target": "es5",
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "outDir": "temp/ts",
+        "lib": [
+            "es2015",
+            "dom",
+            "esnext.asynciterable"
+        ],
+        "rootDirs": [
+            "server/src",
+            "../common"
+        ],
+        "baseUrl": "../",
+        "paths": {
+            "lodash": [
+                "../node_modules/@types/lodash"
+            ],
+            "common/*": [
+                "common/*"
+            ],
+            "server/*": [
+                "server/src/*"
+            ],
+        },
+    },
+    "include": [
+        "../server/src/**/*",
+        "../common/**/*"
+    ]
+}

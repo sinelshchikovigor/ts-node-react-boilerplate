@@ -1,0 +1,26 @@
+{
+    "tests": "./src/**/*.e2e.ts",
+    "timeout": 20000,
+    "output": "./temp/e2e",
+    "helpers": {
+        "Puppeteer": {
+            "url": "http://localhost:4000",
+            "show": false,
+            "chrome": {
+                "headless": true,
+                "ignoreHTTPSErrors": true,
+                "args": [
+                    "--ignore-certificate-errors",
+                    "--ignore-urlfetcher-cert-requests",
+                    "--allow-insecure-localhost",
+                    "--no-sandbox"
+                ]
+            }
+        }
+    },
+    "include": {},
+    "bootstrap": false,
+    "mocha": {},
+    "name": "node-react",
+    "translation": "ru-RU"
+}
