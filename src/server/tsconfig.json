@@ -30,8 +30,8 @@
             ],
             "server/*": [
                 "server/src/*"
-            ],
-        },
+            ]
+        }
     },
     "include": [
         "../server/src/**/*",
