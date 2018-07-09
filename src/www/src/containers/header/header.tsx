@@ -17,12 +17,7 @@ export interface IHeaderProps extends IDefaultProps {}
  */
 export class HeaderComponent extends React.Component<IHeaderProps> {
     public onLogoutClick = () => {
-        Modals.showStyled(this.renderLogoutDialog, {
-            content: {
-                width: '50%',
-                margin: '0 auto',
-            },
-        }, () => {
+        Modals.showStyled(this.renderLogoutDialog, {}, () => {
             RequestUtil
                 .fetch<void>('/logout')
                 .then(() => {

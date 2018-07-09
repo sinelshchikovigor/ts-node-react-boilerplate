@@ -7,6 +7,7 @@
         "install": "cd src/server && npm i && cd ../www && npm i && cd ../mobile && npm i",
         "start": "cd src/server && npm start",
         "stop": "cd src/server && npm stop",
+        "tsc": "cd src/server && tsc && cd ../www && tsc && cd ../mobile && tsc",
         "prod": "cd src/server && npm run prod",
         "ios": "cd src/mobile && npm run ios",
         "e2e": "cd src/www && npm run build && cd ../server && npm run prod && cd ../www && npm run e2e",

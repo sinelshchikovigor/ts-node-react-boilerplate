@@ -1,5 +1,7 @@
 import * as React from 'react';
 import {View, Text, StyleSheet, Platform} from 'react-native';
+import {Locale} from '../../locale';
+import {Languages} from 'mobile/locale/languages';
 
 const instructions = Platform.select({
     ios: 'Press Cmd+R to reload,\n' +
@@ -18,7 +20,7 @@ export class Home extends React.Component<IProps> {
                     Welcome to React Native! 🎉🎉🎉
                 </Text>
                 <Text style={styles.instructions}>
-                    To get started, edit App.js
+                    This is {Locale.get('home', Languages.en)}
                 </Text>
                 <Text style={styles.instructions}>
                     {instructions}
