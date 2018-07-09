@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {View, Text, StyleSheet, Platform} from 'react-native';
-import {Locale} from '../../locale';
-import {Languages} from 'mobile/locale/languages';
+import {Locale, Languages} from '../../locale';
 
 const instructions = Platform.select({
     ios: 'Press Cmd+R to reload,\n' +
