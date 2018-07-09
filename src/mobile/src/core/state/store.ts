@@ -1,12 +1,16 @@
-import {compose, applyMiddleware, createStore} from 'redux';
+import {compose, applyMiddleware, createStore, combineReducers} from 'redux';
+import thunk from 'redux-thunk';
 import logger from 'redux-logger';
+import {authReducer} from '../auth/auth-reducer';
+import { IState } from './state';
 
 const enhancer = compose(
     applyMiddleware(logger),
+    applyMiddleware(thunk),
 );
 
-const reducer = function(state: any = {}) {
-    return state;
-};
+const reducer = combineReducers<IState>({
+    auth: authReducer,
+});
 
 export const store = createStore(reducer, enhancer);
