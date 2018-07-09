@@ -1,13 +1,14 @@
-import {StackNavigator} from 'react-navigation';
-import {Home, Login} from './views';
+import * as React from 'react';
+import {Provider} from 'react-redux';
+import {store} from './core';
+import {Navigator} from './views';
 
-export const Mobile = StackNavigator({
-    home: {
-        screen: Login,
-    },
-    login: {
-        screen: Home,
-    },
-}, {
-    initialRouteName: 'home',
-});
+export class Mobile extends React.Component {
+    public render() {
+        return (
+            <Provider store={store}>
+                <Navigator />
+            </Provider>
+        );
+    }
+}
