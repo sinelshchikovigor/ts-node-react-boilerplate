@@ -61,7 +61,7 @@
         "karma-webpack": "3.0.0",
         "mocha": "5.0.4",
         "mocha-prepare": "0.1.0",
-        "puppeteer": "1.4.0",
+        "puppeteer": "1.13.0",
         "shelljs": "0.8.1",
         "ts-loader": "4.1.0",
         "ts-node": "5.0.1",
